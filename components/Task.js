@@ -1,18 +1,17 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
 const Task = (props) => {
-
-    return (
-      <View style={styles.item}>
-        <View style={styles.itemLeft}>
-          <View style={styles.itemCheck}></View>
-          <Text style={styles.itemText}>{props.text}</Text>
-        </View>
-        <View style={styles.itemCircle}></View>
+  return (
+    <View style={styles.item}>
+      <View style={styles.itemLeft}>
+        <View style={styles.itemCheck}></View>
+        <Text style={styles.itemText}>{props.text}</Text>
       </View>
-    );
-}
+      <View style={styles.itemCircle}></View>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   item: {
@@ -20,7 +19,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#000000',
+    borderColor: "#000000",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
@@ -34,11 +33,11 @@ const styles = StyleSheet.create({
   itemCheck: {
     width: 24,
     height: 24,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#719f9b",
     opacity: 0.8,
     borderRadius: 5,
     borderWidth: 2,
-    borderColor: '#000000',
+    borderColor: "#000000",
     marginRight: 15,
   },
   itemText: {
@@ -47,6 +46,7 @@ const styles = StyleSheet.create({
   itemCircle: {
     width: 12,
     height: 12,
+    backgroundColor: "#719f9b",
     borderColor: "#000000",
     borderWidth: 2,
     borderRadius: 5,
